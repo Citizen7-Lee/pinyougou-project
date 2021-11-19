@@ -1,0 +1,83 @@
+/* 把所有标签的内外边距清零 */
+
+* {
+    margin: 0;
+    padding: 0;
+    /* css3盒子模型 padding 和 border 的宽度不会再增加整个盒子的大小*/
+    box-sizing: border-box;
+}
+
+/* em 和 i 斜体的文字不倾斜 */
+
+em, i {
+    font-style: normal;
+}
+
+/* 去掉 li 的小圆点 */
+
+li {
+    list-style: none;
+}
+
+img {
+    /* border 0 照顾低版本浏览器 如果图片外面包含了链接会有边框的问题 */
+    border: 0;
+    /* 取消图片底侧有空白缝隙的问题 */
+    vertical-align: middle;
+}
+
+button {
+    /* 当我们鼠标经过 button 按钮的时候，鼠标变成小手 */
+    cursor: pointer;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c81623;
+}
+
+button, input {
+    /* "\5B8B\4F53" 就是宋体的意思 这样浏览器兼容性比较好 */
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    /* 取消默认的灰色边框 */
+    border: 0;
+    /* 取消点击后出现的蓝色边框 */
+    outline: none;
+}
+
+body {
+    /* CSS3 抗锯齿形 让文字显示的更加清晰 */
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    color: #666;
+}
+
+.hide, .none {
+    display: none;
+}
+
+/* 清除浮动 */
+
+.clearfix:after {
+    /* 设置不可见 */
+    visibility: hidden;
+    /* 清除浮动的代码 */
+    clear: both;
+    /* 转换成块级元素，因为原本的伪类选择器是行内元素 */
+    display: block;
+    /* 必须属性 content */
+    content: ".";
+    /* 设置不可见 */
+    height: 0;
+}
+
+/* 照顾低版本浏览器 */
+
+.clearfix {
+    *zoom: 1;
+}

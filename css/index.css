@@ -1,0 +1,257 @@
+/* main主题模块 */
+
+.main {
+    margin-left: 220px;
+    height: 455px;
+    width: 980px;
+    margin-top: 10px;
+}
+
+.main .focus {
+    overflow: hidden;
+    position: relative;
+    height: 455px;
+    width: 721px;
+}
+
+.focus ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+}
+
+.focus ul li {
+    float: left;
+}
+
+.focus ul li img {
+    width: 721px;
+    height: 455px;
+}
+
+.arrow-l, .arrow-r {
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 24px;
+    height: 40px;
+    background: rgba(0, 0, 0, .3);
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 18px;
+    z-index: 2;
+}
+
+.arrow-r {
+    right: 0;
+}
+
+.circle {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -35px;
+    height: 13px;
+    background: rgba(255, 255, 255, .3);
+    border-radius: 7px;
+}
+
+.circle li {
+    float: left;
+    border-radius: 50%;
+    margin: 3px;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.circle .current {
+    background-color: #c81623;
+}
+
+.main .news_flash {
+    height: 455px;
+    width: 250px;
+}
+
+.news_flash .news {
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+
+.news_flash .life_service {
+    overflow: hidden;
+    height: 209px;
+    border: 1px solid #e4e4e4;
+    border-top: 0px;
+}
+
+.news_flash .bargain {
+    padding-top: 6px;
+}
+
+.news .news_hd {
+    height: 33px;
+    line-height: 33px;
+    padding: 0 15px;
+    border-bottom: 1px dotted #e4e4e4;
+}
+
+.news .news_hd h5 {
+    font-size: 14px;
+}
+
+.news .news_hd .more::after {
+    font-family: 'icomoon';
+    content: '\e920';
+}
+
+.news_bd {
+    margin-top: 4px;
+}
+
+.news_bd ul li {
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.life_service ul {
+    width: 252px;
+}
+
+.life_service ul li {
+    float: left;
+    width: 63px;
+    height: 71px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+}
+
+.life_service ul li i {
+    display: inline-block;
+    margin-top: 12px;
+    width: 24px;
+    height: 28px;
+    background: url(../images/icons.png) no-repeat -19px -15px;
+}
+
+/* recom推荐模块 */
+
+.recom {
+    margin-top: 12px;
+    height: 163px;
+    text-align: center;
+    background-color: #ebebeb;
+}
+
+.recom .recom_hd {
+    height: 100%;
+    width: 205px;
+    background-color: #5c5251;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.recom .recom_bd {
+    padding-left: 3px;
+}
+
+.recom .recom_bd ul li {
+    position: relative;
+    float: left;
+    margin-top: 9px;
+}
+
+.recom .recom_bd ul li:nth-child(-n+3)::after {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 0px;
+    content: '';
+    width: 1px;
+    height: 145px;
+    background-color: #ddd;
+}
+
+/* floor楼层模块 */
+
+.floor1 .box_hd {
+    margin-top: 30px;
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+
+.floor1 .box_hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+    font-weight: 400;
+}
+
+.tab_list ul li {
+    float: left;
+    line-height: 30px;
+}
+
+.tab_list ul li a {
+    padding: 0 15px;
+}
+
+.box_bd {
+    height: 361px;
+}
+
+.tab_list_item>div {
+    float: left;
+    height: 361px;
+}
+
+.col_210 {
+    width: 210px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.col_329 {
+    width: 329px;
+}
+
+.col_221 {
+    width: 221px;
+    border-right: 1px solid #ccc;
+}
+
+.col_219 {
+    width: 219px;
+}
+
+.col_210 ul {
+    padding: 0 7px;
+}
+
+.col_210 ul li {
+    float: left;
+    margin: 0 5px;
+    height: 34px;
+    width: 86px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    line-height: 34px;
+}
+
+.col_210 img {
+    padding-top: 35px;
+}
+
+.border_bottom {
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
